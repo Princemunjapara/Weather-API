@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*------------------- Navbar Section ---------------------*/
+.navbar-section{
+    background-color: #e1e7ee;
+    
+}
+.navbar-section .navbar-brand .nav-img{
+    width: 80%;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+}
+.navbar-section .navbar-nav .nav{
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: 'Inter', sans-serif;
+    color: #28405c !important;
+    margin-left: 15px;
+    position: relative;
+    @media screen and (min-width: 1280px) {
+        font-size: 21px;
+        margin-left: 20px;
+    }
+}
+.navbar-section .navbar-nav .nav::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #28405c !important;
+    transition: transform 0.4s;
+    transform: scaleX(0);
+    transform-origin: right;
+}
+.navbar-section .navbar-nav .nav:hover::before, 
+.navbar-section .navbar-nav .active.nav::before {
+    transform: scalex(1);
+    transform-origin: left;
+}
+
+.navbar-section .navbar-toggler{
+    color: #28405c !important;
+    border: 3px solid #28405c !important;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+}
+
+
+/*---------------------- Home Section ----------------------*/
+.section{
+    padding: 50px;
+    background-color: #28405c;
+}
+.section .main-div{
+    background-color: #e1e7ee;
+    padding: 50px;
+    border-radius: 10px;
+}
+.section .home-div img{
+    width: 15%;
+    border-radius: 10px;
+}
+.section .home-div h4{
+    font-size: 24px;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+}
+.section .home-div .div-info{
+    height: 85%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.section .home-div .div-info h1{
+    font-size: 45px;
+    font-weight: 800 !important;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 20px;
+    color: #28405c;
+    @media screen and (min-width:1280px) {
+        font-size: 55px;
+    }
+}
+.section .home-div .div-info p{
+    font-size: 19px;
+    margin-bottom: 20px;
+    @media screen and (min-width:1280px) {
+        font-size: 23px;
+    }   
+}
+.section .home-div .div-info .btn1{
+    padding: 10px 20px; 
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #28405c;
+    color: #fff;
+    border: 2px solid #28405c;
+    display: flex;
+    align-items: center;
+    transition:  all 0.4s;
+}
+.section .home-div .div-info .btn1:hover{
+    background-color: #fff;
+    color: #28405c;
+}
+.section .div-info .ico1{
+    font-size: 30px;
+    margin-right: 10px;
+    color: #fff;
+    transition: all 0.4s;
+}
+.section .home-div .div-info .btn1:hover .ico1{
+    color: #28405c;
+}
+
+
+.section .img-div .image{
+    width: 100%;  
+    border-top-left-radius: 25%;
+    border-bottom-right-radius: 25%;
+}
+
+@media screen and (max-width:778px) {
+    .section .home-div img{
+        width: 15%;
+        border-radius: 10px;
+    }
+    .section .home-div .div-info h1{
+        font-size: 35px;
+    }
+    .section .home-div .div-info p{
+        font-size: 16px;
+    }
+    .section .home-div .div-info .btn1{
+        padding: 10px 17px; 
+        border-radius: 50px;
+    }
+    .section .div-info .ico1{
+        font-size: 20px;
+    }
+}
+
+
+/*---------------------- Search Section ----------------------*/
+
+.search-img{
+    width: 100%;
+    height: 500px !important;
+    border-radius: 20px;
+}
+
+.section  .search label{
+    font-size: 18px;
+    font-weight: bold;
+    color: #28405c;
+    font-family: 'Inter', sans-serif;
+}
+.section .search .search-btn{
+    padding: 10px 20px; 
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #28405c;
+    color: #fff;
+    border: 2px solid #28405c;
+    display: flex;
+    align-items: center;
+    transition:  all 0.4s;
+}
+.section .search .search-btn:hover{
+    background-color: #fff;
+    color: #28405c;
+}
+
+.section .search .loc-icon{
+    font-size: 22px;
+    color: #28405c;
+    cursor: pointer;
+}
+
+
+/*---------------------- Result Section ----------------------*/
+
+
+.result-section{
+    padding: 50px 0;
+    background-color: #e1e7ee;
+}
+.result-section h2{
+    color: #28405c;
+    font-size: 30px;
+    font-weight: bold !important;
+    font-family: 'Playfair Display', serif;
+}
+.result-section .card{
+    background-color: #28405c;
+    padding: 50px;
+    border-radius: 10px; 
+}
+.result-section .card h4{
+    color: #FDB813; 
+    font-family: 'Inter', sans-serif;
+}
+
+.result-section .card h5{
+    color: #e1e7ee; 
+    font-family: 'Inter', sans-serif;
+}
+.result-section .card table th{
+    color: #e1e7ee;
+}
+.result-section .card table td{
+    color: #e1e7ee;
+}
+
+.selectcity-div h3{
+    color: #28405c;
+}
+
+
+/*---------------------- Card Section ----------------------*/
+.txt-css{
+    color:#e1e7ee;
+    font-weight: 400 ;
+}
+
+
+/*---------------------- Recent Section ----------------------*/
+
+.main-section{
+    padding: 50px 0;
+    background-color: #28405c;
+}
+.main-section h2{
+    color: #e1e7ee;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+}
+.main-section .recent-div{
+    background-color: #e1e7ee;
+    padding: 20px; 
+    border-radius: 10px;
+}
+.main-section .recent-div li{
+    color: #28405c;
+    font-size: 20px;
+    font-family: 'Inter', sans-serif;
+    margin: 5px 0;
+    font-weight: bold;
+    cursor: pointer;
+}
+
